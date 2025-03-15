@@ -8,9 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class AtividadeAula02Controller {
 
-    @GetMapping("/hello")
-    public String helloWorld() {
-        return "Hello World";
+    @GetMapping("/cursos")
+    public String infoCurso() {
+        return "[" +
+                "{" +
+                "\"Id\": 1," +
+                "\"Name\":\"Engenharia de Software\"," +
+                "\"Description\":\"Melhor Curso\"" + // Removi a vírgula extra aqui
+                "}" +
+                "]";
     }
+
 
 }
